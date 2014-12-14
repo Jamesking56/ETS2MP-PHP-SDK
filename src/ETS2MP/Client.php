@@ -24,6 +24,11 @@ class Client {
         $this->client = $client;
     }
 
+    /**
+     * Set whether to use SSL or not.
+     *
+     * @param bool $ssl
+     */
     public function setSSL($ssl = true)
     {
         if($ssl)
@@ -36,9 +41,14 @@ class Client {
         }
     }
 
+    /**
+     * Get all ETS2MP Servers.
+     *
+     * @return array
+     */
     public function getServers()
     {
-        $response = $this->client->get($this->apiURL->__toString());
+        $response = $this->client->get($this->apiURL->__toString(), true);
         $response = json_decode($response);
 
         return $response;
