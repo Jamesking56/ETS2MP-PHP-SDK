@@ -15,7 +15,10 @@
             "email": "james@jamesking56.co.uk"
         }
     ],
-    "psr-4": {
-        "ETS2MP\\": "src/"
-    }
+    "autoload": {
+        "psr-0": {
+            "ETS2MP": "src/"
+        }
+    },
+    "bin": ["bin/phpspec"]
 }
