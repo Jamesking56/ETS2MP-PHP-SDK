@@ -2,7 +2,8 @@
     "name": "jamesking56/ets2mp-php-sdk",
     "description": "An Unofficial PHP SDK for ETS2MP's API",
     "require": {
-        "guzzlehttp/guzzle": "~5.0"
+        "guzzlehttp/guzzle": "~5.0",
+        "league/url": "~3.2"
     },
     "require-dev": {
         "phpunit/phpunit": "~4.4"
