@@ -45,7 +45,7 @@ class ClientSpec extends ObjectBehavior
 
     function it_can_contact_api()
     {
-        $this->getServers()->shouldReturn($this->testData);
+        $this->getServers()->shouldReturn(json_encode($this->testData));
     }
 
 }
