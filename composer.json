@@ -6,7 +6,8 @@
         "league/url": "~3.2"
     },
     "require-dev": {
-        "phpspec/phpspec": "~2.1"
+        "phpspec/phpspec": "~2.1",
+        "mockery/mockery": "0.9.*"
     },
     "license": "MIT",
     "authors": [

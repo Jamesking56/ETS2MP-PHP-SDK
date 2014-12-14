@@ -18,10 +18,10 @@ class Client {
 
     protected $client;
 
-    public function __construct()
+    public function __construct(\GuzzleHttp\Client $client)
     {
         $this->apiURL = Url::createFromUrl(self::BASE_URL);
-        $this->client = new \GuzzleHttp\Client();
+        $this->client = $client;
     }
 
     public function setSSL($ssl = true)
