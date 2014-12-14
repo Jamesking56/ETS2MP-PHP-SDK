@@ -38,7 +38,7 @@ class Client {
 
     public function getServers()
     {
-        $response = $this->client->get($this->apiURL->__toString());
+        $response = $this->client->get($this->apiURL->__toString(), true);
         $response = json_decode($response);
 
         return $response;
