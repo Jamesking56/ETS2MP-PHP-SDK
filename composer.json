@@ -1,0 +1,25 @@
+{
+    "name": "jamesking56/ets2mp-php-sdk",
+    "description": "An Unofficial PHP SDK for ETS2MP's API",
+    "require": {
+        "guzzlehttp/guzzle": "~5.0",
+        "league/url": "~3.2"
+    },
+    "require-dev": {
+        "phpspec/phpspec": "~2.1",
+        "mockery/mockery": "0.9.*"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "James King",
+            "email": "james@jamesking56.co.uk"
+        }
+    ],
+    "autoload": {
+        "psr-0": {
+            "ETS2MP": "src/"
+        }
+    },
+    "bin": ["bin/phpspec"]
+}
